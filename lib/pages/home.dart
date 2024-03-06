@@ -15,8 +15,8 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Color(0xff1D1617).withOpacity(0.11),
-                  blurRadius: 40,
+                  color: Color.fromARGB(255, 60, 58, 59).withOpacity(0.11),
+                  blurRadius: 20,
                   spreadRadius: 0.0,
                 )
               ]
@@ -25,8 +25,13 @@ class HomePage extends StatelessWidget {
               decoration: InputDecoration(
               filled: true,
               fillColor: Color.fromARGB(255, 255, 255, 255),
+              contentPadding: const EdgeInsets.all(15),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(15),
+                borderSide: BorderSide.none
               ),
             ),
+          )
           )
           ]
         
