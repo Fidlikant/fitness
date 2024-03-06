@@ -11,7 +11,16 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            margin: const EdgeInsets.only(top: 40, left: 40, right: 40),
+            margin: const EdgeInsets.only(top: 60, left: 40, right: 40),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0xff1D1617).withOpacity(0.11),
+                  blurRadius: 40,
+                  spreadRadius: 0.0,
+                )
+              ]
+            ),
             child: TextField(
               decoration: InputDecoration(
               filled: true,
