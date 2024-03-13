@@ -10,34 +10,51 @@ class HomePage extends StatelessWidget {
       appBar: appBar(),
       body: Column(
         children: [
-          Container(
-            margin: const EdgeInsets.only(top: 60, left: 40, right: 40),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Color.fromARGB(255, 60, 58, 59).withOpacity(0.11),
-                  blurRadius: 20,
-                  spreadRadius: 0.0,
-                )
-              ]
-            ),
-            child: TextField(
-              decoration: InputDecoration(
-              filled: true,
-              fillColor: Color.fromARGB(255, 255, 255, 255),
-              contentPadding: const EdgeInsets.all(15),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-                borderSide: BorderSide.none
-              ),
-            ),
-          )
-          )
+          _searchField()
           ]
         
       )
 
     );
+  }
+
+  Container _searchField() {
+    return Container(
+          margin: const EdgeInsets.only(top: 60, left: 40, right: 40),
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(255, 60, 58, 59).withOpacity(0.11),
+                blurRadius: 20,
+                spreadRadius: 0.0,
+              )
+            ]
+          ),
+          child: TextField(
+            decoration: InputDecoration(
+            filled: true,
+            fillColor: Color.fromARGB(255, 255, 255, 255),
+            contentPadding: const EdgeInsets.all(15),
+            prefixIcon: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: SvgPicture.asset('assets/icons/Search.svg'),
+            ),
+            hintText: 'Search for something good...',
+              hintStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 12,
+            ),
+            suffixIcon: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: SvgPicture.asset('assets/icons/Filter.svg'),
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(15),
+              borderSide: BorderSide.none
+            ),
+          ),
+        )
+        );
   }
 
   AppBar appBar() {
