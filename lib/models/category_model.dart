@@ -32,25 +32,25 @@ class CategoryModel {
       categories.add(CategoryModel(
         name: 'Pie',
         iconPath: 'assets/icons/pie.svg',
-        boxColor: Color.fromARGB(255, 148, 41, 110),
+        boxColor: const Color.fromARGB(255, 148, 41, 110),
       ));
 
       categories.add(CategoryModel(
         name: 'Smoothies',
         iconPath: 'assets/icons/orange-snacks.svg',
-        boxColor: Color.fromARGB(255, 230, 138, 0),
+        boxColor: const Color.fromARGB(255, 230, 138, 0),
       ));
 
       categories.add(CategoryModel(
         name: 'Salmon of Nigiri',
         iconPath: 'assets/icons/salmon-nigiri.svg',
-        boxColor: Color.fromARGB(255, 255, 0, 247),
+        boxColor: const Color.fromARGB(255, 255, 0, 247),
       ));
 
       categories.add(CategoryModel(
         name: 'Canaian Bread',
         iconPath: 'assets/icons/canai-bread.svg',
-        boxColor: Color.fromARGB(255, 157, 60, 0),
+        boxColor: const Color.fromARGB(255, 157, 60, 0),
       ));
 
 
